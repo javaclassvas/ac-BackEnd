@@ -28,5 +28,5 @@ app.use(
     res.status(500).json(errorToJSON(err));
   }
 );
-
-server.listen(3000);
+const PORT : string|number = process.env.PORT || 3000;
+server.listen(PORT);
